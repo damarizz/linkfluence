@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 94px;
+    padding: 30px 54px;
+    padding-bottom: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color:#2b2927;
+}
+
+nav a{
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+#nav1 {
+    margin:0;
+}
+
+nav ul{
+    margin-top: 10px;
+}
+hr{
+    width: calc(100vw - 108px);
+    border: 0;
+    border-top: 1px solid #F5ADCB;
+    margin-bottom: 0 auto;
+}
+
+@media (max-width:970px) {
+    header{
+        flex-direction:column;
+    }
+    .logo{
+        margin:auto;
+    }
+    nav{
+        margin:auto;
+    }
+
+    nav a{
+        margin-left: 20px;
+    }
+
+    hr{
+        margin-bottom:10px;
+    }
+}
+
+/* CONTENIDO BODY */
+
+.influencer-name{
+    margin:50px 76px 10px;
+    
+    font-size: 48px;
+}
+
+.galeria{
+    display: grid;
+    margin:1px 80px;
+    grid-template-columns: repeat(5, calc((100% - 40px) / 5));
+    grid-template-rows: repeat(2, 300px);
+    gap: 10px;
+}
+
+.fotito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition:transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.fotito img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fotito:hover{
+    transform: scale(1.04);
+}
+
+#ft1{
+    grid-column:1/ span 3 ;
+    grid-row:1/ span 2;
+}
+#ft2{
+    grid-column:4/ span 1 ;
+    grid-row:1/ span 1;
+}
+#ft3{
+    grid-column:5/ span 1 ;
+    grid-row:1/ span 1;
+}
+#ft4{
+    grid-column:4/ span 2 ;
+    grid-row:2/ span 1;
+}
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+  }
+  
+  .modal-content {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }

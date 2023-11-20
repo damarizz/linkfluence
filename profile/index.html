@@ -3,17 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="stylesheet" href="../src/css/profile.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Linkfluence: Creadores de impacto para tu marca</title>
 </head>
 <body>
   <header>
-    <h1>
-      <img width="200" src="/logo.png"/>
+    <h1 class="logo" >
+      <a href="/" ><img width="222" src="/logo.png"/></a>
     </h1>
+    <nav class="menu">
+      <ul>
+          <a href="#" id="nav1">Explora</a>
+          <a href="#">Como funciona</a>
+          <a href="#">Soy una marca</a>
+          <a href="#">Soy un creador</a>
+          <a href="#">Login</a>
+      </ul>
+    </nav>
   </header>
+  <hr>
+  
+  <h1 class="influencer-name">Misias pero viajeras</h1>
+  <div class="galeria">
+    <div class="fotito" id="ft1" onclick="openModal('../../../public/imagenEjemplo.jpg')">
+      <img src="/public/imagenEjemplo.jpg" alt="Imagen 1">
+    </div>
+    <div class="fotito" id="ft2" onclick="openModal('../../../public/imagenEjemplo.jpg')">
+      <img src="/public/imagenEjemplo.jpg" alt="Imagen 2">
+    </div>
+    <div class="fotito" id="ft3" onclick="openModal('../../../public/imagenEjemplo.jpg')">
+      <img src="/public/imagenEjemplo.jpg" alt="Imagen 3">
+    </div>
+    <div class="fotito" id="ft4" onclick="openModal('../../../public/imagenEjemplo.jpg')">
+      <img src="/public/imagenEjemplo.jpg" alt="Imagen 4">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="" id="modalImage" class="modal-content">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+  
   <a href="/checkout/">Comprar oferta</a>
-  <a href="/">Volver</a>
-  <script type="module" src="/src/js/checkout/main.js"></script>
+  <script defer type="module" src="/src/js/profile/main.js"></script>
 </body>
 </html>
