@@ -1,0 +1,116 @@
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 94px;
+    padding: 30px 54px;
+    padding-bottom: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color:#2b2927;
+}
+
+nav a{
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+#nav1 {
+    margin:0;
+}
+
+nav ul{
+    margin-top: 10px;
+}
+hr{
+    width: calc(100vw - 108px);
+    border: 0;
+    border-top: 1px solid #F5ADCB;
+    margin-bottom: 0 auto;
+}
+
+@media (max-width:970px) {
+    header{
+        flex-direction:column;
+    }
+    .logo{
+        margin:auto;
+    }
+    nav{
+        margin:auto;
+    }
+
+    nav a{
+        margin-left: 20px;
+    }
+
+    hr{
+        margin-bottom:10px;
+    }
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background: gray;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-bar{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    border-color: none;
+    padding: 10px 30px 10px 40px;
+    outline: 5px;
+}
+
+.domain {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.register-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+.claim-button{
+    background-color: black;
+    border-radius: 60px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.claim {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+}
+
+.socialmed{
+    width: 500px;
+    align-items: center;
+}
