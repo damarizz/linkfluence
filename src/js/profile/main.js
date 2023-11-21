@@ -1,10 +1,27 @@
 import '/src/css/globals.css'
 import '/src/css/profile.css'
 
-let currentImageIndex = 0;
+document.getElementById('ft1').addEventListener('click', function() {
+    console.log('Clic en ft1');
+    openModal('../../../public/imagenEjemplo.jpg');
+  });
+
+  document.getElementById('ft2').addEventListener('click', function() {
+    console.log('Clic en ft2');
+    openModal('../../../public/holi.png');
+  });
+
+  document.getElementById('ft3').addEventListener('click', function() {
+    console.log('Clic en ft3');
+    openModal('../../../public/imagenEjemplo.jpg');
+  });
+
+  document.getElementById('ft4').addEventListener('click', function() {
+    console.log('Clic en ft4');
+    openModal('../../../public/imagenEjemplo.jpg');
+  });
 
 function openModal(imageSrc) {
-    console.log('Abriendo modal con:', imageSrc);
     const modal = document.getElementById('myModal');
     const modalImage = document.getElementById('modalImage');
     currentImageIndex = getImageIndex(imageSrc);
@@ -12,41 +29,3 @@ function openModal(imageSrc) {
     modal.style.display = 'block';
     modalImage.src = imageSrc;
   }
-
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
-}
-
-function changeImage(n) {
-  currentImageIndex += n;
-  const images = document.querySelectorAll('.fotito img');
-
-  if (currentImageIndex >= images.length) {
-    currentImageIndex = 0;
-  } else if (currentImageIndex < 0) {
-    currentImageIndex = images.length - 1;
-  }
-
-  const newImageSrc = images[currentImageIndex].src;
-  document.getElementById('modalImage').src = newImageSrc;
-}
-
-function getImageIndex(imageSrc) {
-  const images = document.querySelectorAll('.fotito img');
-  for (let i = 0; i < images.length; i++) {
-    if (images[i].src === imageSrc) {
-      return i;
-    }
-  }
-  return 0;
-}
-
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    closeModal();
-  } else if (event.key === 'ArrowLeft') {
-    changeImage(-1);
-  } else if (event.key === 'ArrowRight') {
-    changeImage(1);
-  }
-});
