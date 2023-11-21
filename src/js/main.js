@@ -109,11 +109,11 @@ influencers.forEach((influencer) => {
   const element = document.createElement('div')
   element.classList.add('influencer')
   element.innerHTML = `
-    <div class="img-wrapper">
+    <a href="/profile/" class="img-wrapper">
       <img src="${influencer.img}" alt="Influencer">
       <h4>${influencer.title}</h4>
       <span class="location">${influencer.location}</span>
-    </div>
+    </a>
     <div class="influencer__information">
       <header>
         <span>${influencer.social_media}</span>
