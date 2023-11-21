@@ -130,8 +130,7 @@
 }
 
 .register-bar {
-    width: 100%;
-    max-width: 500px;
+    width: 70%;
     background: #E8E9EB;
     display: flex;
     align-items: center;
@@ -174,6 +173,7 @@
     color: white;
     padding: 10px 10px;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
