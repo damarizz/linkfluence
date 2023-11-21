@@ -139,7 +139,7 @@
 }
 
 .checkout-container {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -162,7 +162,7 @@
     font-size: medium;
     border-radius: 5px;
     border: #9e9e9e solid 2px;
-    width: 50%;
+    width: 55%;
 }
 
 input::-webkit-outer-spin-button,
@@ -176,7 +176,7 @@ input::-webkit-inner-spin-button {
     font-size: medium;
     border-radius: 5px;
     border: #9e9e9e solid 2px;
-    width: 13%;
+    width: 18%;
 }
 
 .postal-code-input {
@@ -184,7 +184,7 @@ input::-webkit-inner-spin-button {
     font-size: medium;
     border-radius: 5px;
     border: #9e9e9e solid 2px;
-    width: 23%;
+    width: 26%;
 }
 
 .text-card-data {
@@ -205,11 +205,13 @@ input::-webkit-inner-spin-button {
 }
 
 .confirm-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-size: large;
     font-weight: bold;
     color: white;
-    padding-top: 1.5rem;
     width: 100%;
     height: 100%;
 }
@@ -261,10 +263,13 @@ input::-webkit-inner-spin-button {
 }
 
 .steps {
+    margin-top: 2rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .step {
+    width: 30%;
     display: flex;
 }
 
@@ -273,3 +278,22 @@ input::-webkit-inner-spin-button {
     font-size: xx-large;
     font-weight: bold;
 }
+
+.step-description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.step-tittle {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    height: 3rem;
+    font-weight: 500;
+}
+
+.step-text {
+    margin: 0;
+}
+
