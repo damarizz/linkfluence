@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        checkout: resolve(__dirname, 'pages/checkout/index.html'),
-        influencers: resolve(__dirname, 'pages/influencers/index.html'),
-        profile: resolve(__dirname, 'pages/profile/index.html'),
+        checkout: resolve(__dirname, 'checkout/index.html'),
+        influencers: resolve(__dirname, 'influencers/index.html'),
+        profile: resolve(__dirname, 'profile/index.html'),
       },
     },
   },
