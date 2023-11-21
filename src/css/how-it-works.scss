@@ -1,0 +1,45 @@
+.section-level.how-it-works {
+  h4 {
+    font-size: 1.4rem;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+  }
+
+  .how-it-works__steps {
+    display: flex;
+
+    .step {
+      span {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin-bottom: 0;
+      }
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+        margin-top: 8px;
+        font-weight: bolder;
+      }
+      p {
+        font-size: 0.95rem;
+        margin-top: 0;
+      }
+    }
+  }
+  .how-it-works__features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+
+    .feature {
+      h5 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+      }
+      p {
+        margin-top: 0px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
