@@ -13,6 +13,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
   width: 100vw;
@@ -21,4 +25,14 @@ body {
 
 header {
   overflow: auto;
+}
+
+::-webkit-scrollbar{
+  height: 4px;
+  width: 8px;
+  background: #f3d0ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #ca7bbe;
+  border-radius: 10px;
 }
