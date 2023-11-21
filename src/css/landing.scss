@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar{
+  height: 4px;
+  width: 4px;
+  background: #f3d0ef;
+}
+::-webkit-scrollbar-thumb:horizontal{
+  background: #dda2d5;
+  border-radius: 10px;
+}
+
+.section-holder.header {
+  display: flex;
+  margin-top: 35px;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+  }
+
+  #linkfluence-description {
+    margin-bottom: 1.3rem;
+    text-align: center;
+  }
+}
+
+.section-holder.carousel {
+  position: relative;
+  overflow-x: hidden;
+  height: 300px;
+
+  .images {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.2rem;
+    left: -100%;
+  }
+
+  .images {
+    animation: primary 20s linear alternate-reverse infinite;
+  }
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.section-level {
+  overflow: auto;
+}
