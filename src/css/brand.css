@@ -123,20 +123,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin: 4% 0;
 }
 
+
+
 h1 {
-    font-size: 2rem;
-    color: black;
+    font-size: 260%;
     font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: var(--black);
 }
 
 h1 span{
     background: linear-gradient(to right, #f56040, #c850c0, #833ab4);
     -webkit-background-clip: text;
-    color: transparent;;
+    color: transparent;
+}
+
+.change-txt{
+    display: block;
+    min-height: 51px;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    border-right: 3px solid var(--black);
 }
 
 h1 span::before {
@@ -152,6 +163,14 @@ h1 span::before {
     animation: blink 0.7s infinite;
 }
 
+#find {
+    color: gray;
+    font-size: 105%;
+    font-weight: 400;
+    margin: 1.5% 0 3.5% 0;
+    text-align: center;
+}
+
 h1 span.stop-blinking::before {
     animation: none;
 }
@@ -161,3 +180,93 @@ h1 span.stop-blinking::before {
         opacity: 0;
     }
 }
+
+.signup-btn {
+    background-color: black;
+    color: white;
+    width: 220px;
+    padding: 20px;
+    margin: 0 18px;
+    font-size: 105% !important;
+    font-family: 'Inter' sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* logos */
+
+.logo-title{
+    text-align: center;
+    font-size: 92%;
+    margin-bottom: -2.5%;
+    color: #ababab;
+}
+
+.logo-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 4% 0 -2% 0;
+    opacity: 0.75;
+}
+
+.logo-img{
+    width: 120px;
+}
+
+/* logos ending */
+
+/* secciones grisecitas */
+.underdog h2 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(to right, #f56040, #c850c0, #833ab4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .custom-form {
+    position: relative;
+    width: 150px;
+    max-width: 100%;
+    background: #E8E9EB;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .custom-form {
+      width: 120px;
+      padding: 15px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+  }
+/* fin de secciones */
