@@ -10,24 +10,23 @@
 </head>
 <body>
   <header>
-    <!-- Esta es la sección 'Para influencers' -->
-    <h1 class="logo" >
-      <a href="/" ><img width="222" src="/logo.png"/></a>
-    </h1>
-    <nav class="menu">
-      <ul>
-          <a href="#" id="nav1">Explora</a>
-          <a href="#">Como funciona</a>
-          <a href="#">Soy una marca</a>
-          <a href="#">Soy un creador</a>
-          <a href="#">Login</a>
+    <nav class="nav-bar">
+      <a href="/" class="logo"><img src="/logo.png"/></a>
+      <ul class="nav-bar-links">
+          <a href="#" class="nav-link">Explora</a> <!--no hay pantalla-->
+          <a href="#" class="nav-link">Como funciona</a> 
+          <a href="#" class="nav-link">Soy una marca</a>
+          <a href="/influencers/" class="nav-link">Soy un creador</a>
+          <a href="#" class="nav-link">Login</a> <!--no hay pantalla-->
       </ul>
     </nav>
-    <!-- <a href="/">Volver</a>  -->
-
-  <script type="module" src="/src/js/checkout/main.js"></script>
+    <hr class="nav-bar-line">
   </header>
-  <div class = "container">
+  <div class="firstcontainer">
+    <h2 id="ganadinero">Gana dinero como influencer</h2>
+    <h4 id="simpleway">Una forma simple de vender, administrar y obtener pagos a través de colaboraciones con empresas.</h4>
+</div>
+  <div class = "seccontainer">
     <form action="" class="register-bar">
       <p class = "domain">linkfluence.lat/</p> <input type="text" placeholder="tunombre" name="q">
       <button class="claim-button" type="submit">
@@ -35,6 +34,5 @@
       </button>
     </form>
   </div>
-<hr>
 </body>
 </html>
