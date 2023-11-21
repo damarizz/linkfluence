@@ -270,3 +270,13 @@ h1 span.stop-blinking::before {
     }
   }
 /* fin de secciones */
+
+.divcomofunciona {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.footerdiv {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}

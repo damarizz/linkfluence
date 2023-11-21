@@ -1,5 +1,7 @@
 import '/src/css/globals.css'
 import '/src/css/brand.css'
+import '/src/css/how-it-works.scss'
+import '/src/css/footer.scss'
 
 const toggleButton = document.getElementsByClassName('nav-toggle-button')[0]
 const navBarLinks = document.getElementsByClassName('nav-bar-links')[0]
@@ -32,7 +34,7 @@ const typeEffect = () => {
         isDeleting = !isDeleting;
         dynamicText.classList.remove("stop-blinking");
         wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
-        setTimeout(typeEffect, 1200);
+        setTimeout(typeEffect, 120);
     }
 }
 
