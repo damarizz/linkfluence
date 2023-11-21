@@ -7,10 +7,47 @@
 
   .how-it-works__steps {
     display: flex;
+    justify-content: space-between;
 
     .step {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      position: relative;
+      min-height: 200px;
+      height: 100%;
+      color: white;
+      background: linear-gradient(to bottom, transparent 0%, black 80%);
+      padding: 8px 10px;
+      border-radius: 6px;
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        max-height: 180px;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        z-index: -1;
+        border-radius: 6px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 0.95rem;
+        margin-top: 0;
+      }
       span {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bolder;
         margin-bottom: 0;
       }
@@ -20,12 +57,15 @@
         margin-top: 8px;
         font-weight: bolder;
       }
-      p {
-        font-size: 0.95rem;
-        margin-top: 0;
+
+      margin: 0;
+      margin-right: 6px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
+
   .how-it-works__features {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
