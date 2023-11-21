@@ -1,6 +1,8 @@
 .section-level.how-it-works {
+  color: black;
+
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding-bottom: 0;
     margin-bottom: 0px;
   }
@@ -8,6 +10,7 @@
   .how-it-works__steps {
     display: flex;
     justify-content: space-between;
+    margin-top: 1.5rem;
 
     .step {
       display: flex;
@@ -69,16 +72,21 @@
   .how-it-works__features {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 8rem;
     gap: 6px;
+    color: black;
 
     .feature {
       h5 {
         font-size: 1rem;
+        margin-top: 6px;
         margin-bottom: 6px;
       }
       p {
         margin-top: 0px;
         font-size: 0.9rem;
+        color: #1a1a1a;
       }
     }
   }

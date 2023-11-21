@@ -21,8 +21,8 @@ main {
   }
 
   #linkfluence-description {
-    margin-bottom: 1.3rem;
-    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -30,7 +30,7 @@ main {
 .section-holder.carousel {
   position: relative;
   overflow-x: hidden;
-  height: 300px;
+  height: 350px;
 
   .images {
     position: absolute;
@@ -40,10 +40,77 @@ main {
     gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
     left: -100%;
+    animation: primary 25s linear alternate infinite;
+  }
+}
+
+.section-holder.search {
+  width: 100%;
+  overflow: auto;
+
+  h3 {
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
 
-  .images {
-    animation: primary 25s linear alternate infinite;
+  search {
+    display: flex;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 1000px;
+    background-color: #fce9ed;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding: 0 10px;
+
+    button {
+      border: none;
+      background: transparent;
+      .search-icon {
+        overflow: auto;
+        border-radius: 100%;
+        background-color: black;
+        padding: 0.5em;
+        cursor: pointer;
+      }
+    }
+    .v-separator {
+      display: inline-block;
+      width: 1px;
+      height: 70px;
+      background-color: rgb(126, 112, 122)
+    }
+    .search-criteria {
+      flex-grow: 0;
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 300px;
+      cursor: pointer;
+
+      h6 {
+        font-size: 0.9rem;
+        margin-top: 6px;
+        margin-bottom: 4px;
+      }
+      p {
+        color: #707070;
+        margin: 0;
+        font-size: 0.8rem;
+        text-wrap: balance;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
   }
 }
 
