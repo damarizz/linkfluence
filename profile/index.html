@@ -9,34 +9,38 @@
 </head>
 <body>
   <header>
-    <h1 class="logo" >
-      <a href="/" ><img width="222" src="/logo.png"/></a>
-    </h1>
-    <nav class="menu">
-      <ul>
-          <a href="#" id="nav1">Explora</a>
-          <a href="#">Como funciona</a>
-          <a href="#">Soy una marca</a>
-          <a href="#">Soy un creador</a>
-          <a href="#">Login</a>
+    <nav class="nav-bar">
+      <a href="/" class="logo"><img src="/logo.png"/></a>
+      <ul class="nav-bar-links">
+          <a href="#" class="nav-link">Explora</a>
+          <a href="#" class="nav-link">Como funciona</a>
+          <a href="#" class="nav-link">Soy una marca</a>
+          <a href="#" class="nav-link">Soy un creador</a>
+          <a href="#" class="nav-link">Login</a>
       </ul>
+      <a href="javascript:void(0);" class="nav-toggle-button" >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
     </nav>
+    <hr class="nav-bar-line">
   </header>
-  <hr>
+  </header>
   
   <h1 class="influencer-name">Misias pero viajeras</h1>
   <div class="galeria">
     <div class="fotito" id="ft1" >
-      <img src="/public/imagenEjemplo.jpg" alt="Imagen 1">
+      <img src="/public/misias1.jpg" alt="Imagen 1">
     </div>
     <div class="fotito" id="ft2" >
-      <img src="/public/holi.png" alt="Imagen 2">
+      <img src="/public/misias2.avif" alt="Imagen 2">
     </div>
     <div class="fotito" id="ft3" >
-      <img src="/public/imagenEjemplo.jpg" alt="Imagen 3">
+      <img src="/public/misias3.avif" alt="Imagen 3">
     </div>
     <div class="fotito" id="ft4" >
-      <img src="/public/imagenEjemplo.jpg" alt="Imagen 4">
+      <img src="/public/misias4.avif" alt="Imagen 4">
     </div>
   </div>
 
@@ -47,7 +51,6 @@
     <a class="next" onclick="changeImage(1)">&#10095;</a>
   </div>
 
-  <!-- Daniela Rita & Fátima Sotomayor -->
   <div class="profile-div">
     <img class="profile-img" src="/public/profileimg.jpg">
     <div class="info-div">
@@ -60,37 +63,74 @@
     Nunca hemos tenido lujos, así que viajamos felices sin ellos. A veces dormimos incómodas, no siempre tenemos las 3 comidas del día y nos ha tocado varias veces pasar la noche en aeropuertos para ahorrar, pero nos encanta.
     Creamos 'Misias pero viajeras' para romper con el mito de que para viajar hay que ser millonario. ¡Solo hace falta una dosis de ahorro y cojones!
   </p>
+
   <div class="links">
-    <a>
-      <div class="link-div">
+    <div class="link-div">
       <img class="link-img" src="/public/iglogo.png">
-      <h3>misiasperoviajeras</h3>
+      <a href="https://www.instagram.com/misiasperoviajeras/?hl=es-la" target="_blank">misiasperoviajeras</a>
     </div>
-  </a>
-    <a>
-      <div class="link-div">
+    <div class="link-div">
       <img class="link-img" src="/public/tklogo.png">
-      <h3>misiasperoviajeras</h3>
+      <a href="https://www.tiktok.com/@misiasperoviajeras?lang=es" target="_blank" >misiasperoviajeras</a>
     </div>
-  </a>
-    <a>
-      <div class="link-div">
-        <img class="link-img" src="/public/ytlogo.png">
-        <h3>Misias pero viajeras</h3>
-      </div>
-    </a>
-    
+    <div class="link-div">
+      <img class="link-img" src="/public/ytlogo.png">
+      <a href="https://www.youtube.com/c/Misiasperoviajeras" target="_blank" >Misias pero viajeras</a>
+    </div>
   </div>
 
+  <div class="services">
+    <div class="services-title">
+      <h2>Packages</h2>
+      <p>¿Cómo funciona?</p>
+    </div>
+    <div class="filter-container">
+      <div class="category selected" data-category="todo" onclick="filterItems('todo')">Todo</div>
+      <div class="category" data-category="tiktok" onclick="filterItems('tiktok')">TikTok</div>
+      <div class="category" data-category="instagram" onclick="filterItems('instagram')">Instagram</div>
+  </div>
 
+  <div class="items-container" id="items-container">
+    <div class="item instagram">
+      <div class="offer-info">
+        <div class="offer-title">
+          <h3>1 Foto en el Feed de Instagram</h3>
+          <h3>$200</h3>
+        </div>
+        <p class="offer-description">
+          Publicaremos una foto con tu producto, con una descripción y link.
+        </p>  
+      </div>
+      <div class="offer-end">
+        <img class="offer-img" src="/public/iglogo.png">
+        <button class="offer-button" onclick="window.location.href='/checkout/'">Continuar</button>
+      </div>
+    </div>
+      <div class="item tiktok">
+        <div class="offer-info">
+          <div class="offer-title">
+            <h3>1 Video de Tiktok</h3>
+            <h3>$1000</h3>
+          </div>
+          <p class="offer-description">
+            Crearemos de un TikTok que estamos seguros que generará un impacto significativo en la audiencia, haciendo que el público piense instantáneamente: '¡Quiero eso!'"
+          </p>
+        </div>
+        <div class="offer-end">
+          <img class="offer-img" src="/public/tklogo.png">
+          <button class="offer-button" onclick="window.location.href='/checkout/'">Continuar</button>
+        </div>
+      </div>
+  </div>
+  </div>
 
-  <a href="/checkout/">Comprar oferta</a>
 
 
 
 
   <script defer type="module" src="/src/js/profile/main.js"></script>
   <script>
+
       let currentImageIndex = 0;  
       function closeModal() {
         document.getElementById('myModal').style.display = 'none';
@@ -128,6 +168,33 @@
         changeImage(1);
       }
     });
+
+    function filterItems(category) {
+      const itemsContainer = document.getElementById('items-container');
+      const items = itemsContainer.getElementsByClassName('item');
+
+      for (const item of items) {
+          const categories = item.classList;
+
+          if (category === 'todo' || categories.contains(category)) {
+              item.style.display = 'flex';
+          } else {
+              item.style.display = 'none';
+          }
+      }
+      const categories = document.querySelectorAll('.category');
+
+      categories.forEach((item) => {
+          item.classList.remove('selected');
+      });
+
+      const selectedCategory = document.querySelector(`.category[data-category="${category}"]`);
+      selectedCategory.classList.add('selected');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      filterItems('todo');
+     });
+
   </script>
 </body>
 </html>
