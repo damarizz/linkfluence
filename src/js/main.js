@@ -52,7 +52,7 @@ const influencers = [
     title: 'El perro de Alwin',
     location: "Perú, Lima",
     interests: "Mascotas, Entretenimiento",
-    prices_from: 500,
+    prices_from: 9999999,
     social_media: "Instagram"
   },
   {
