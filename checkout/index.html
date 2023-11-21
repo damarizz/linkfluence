@@ -26,13 +26,55 @@
     </nav>
     <hr class="nav-bar-line">
   </header>
-  <h2>Checkout</h2>
-  <span>El pago sera retenido por un lapso de 72 horas. Solo se cobrara si el influencer acepta la petición</span>
-  <section>
-    <section>
-      <input type="text">
-      <input type="text">
-    </section>
+  <div class="checkout">
+    <div class="checkout-back-container">
+      <h2 class="checkout-tittle">Checkout</h2>
+      <span>El pago sera retenido por un lapso de 72 horas. Solo se cobrara si el influencer acepta la petición</span>
+      <section class="checkout-container">
+        <section class="card-data-container">
+          <section class="input-card-data-container">
+            <input class="number-card-input" type="number" placeholder="Numero de tarjeta">
+            <input class="expired-date-card-input" type="text" placeholder="MM/YY">
+            <input class="postal-code-input" type="number" placeholder="Zip/Postal Code">
+          </section>
+          <span class="text-card-data">Secure payments with Stripe</span>
+        <button class="confirm-button"><a href="#">Confirmar</a></button>
+        </section>
+        <section class="checkout-price-container">
+          <div class="image-description-container">
+            <img src="/public/tiktok-logo.png" alt="" class="checkout-image">
+            <p class="product-description">1 video de tik tok (30 segundos)</p>
+          </div>
+          <hr class="price-separator">
+          <div class="subtotal-container"><span class="subtotal-text">Subtotal</span><span class="price">$100.00</span></div>
+          <div class="fee-container"><span class="fee-text">Fee</span><span class="price">$30.20</span></div>
+          <div class="total-container"><span class="total-text">Total</span><div class="price-container"><span class="price">$130.20</span><span class="usd"> USD</span></div></div>
+        </section>
+      </section>
+    </div>
+  </div>
+  <section class="steps">
+    <div>
+      <div class="step-number">1</div>
+      <section class="step-description">
+        <div class="step-tittle">Ingresar Orden</div>
+        <p class="step-text">Sube los requerimientos de la colaboración. El influencer tendrá 72 horas para aceptar tu petición antes de el pago sea liberado</p>
+      </section>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <section class="step-description">
+        <div class="step-le">Comunicate con el influencer</div>
+        <p class="step-text">Chatea con el influencer y organice la colaboración. Sus fondos estarán seguros hasta que el trabajo este completo</p>
+      </section>
+    </div>
+    <div>
+      <div class="step-number">3</div>
+      <section class="step-description">
+        <div class="step-tittle">Recibe el contenido</div>
+        <p class="step-text">Recibe tu contenido para puntuar y aprobar. La colaboración esta completada y el pago sera enviado al influencer</p>
+      </section>
+    </div>
   </section>
   <script type="module" src="/src/js/checkout/main.js"></script>
 </body>
