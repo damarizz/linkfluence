@@ -3,18 +3,8 @@ body {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-}
-
-::-webkit-scrollbar{
-  height: 4px;
-  width: 4px;
-  background: #f3d0ef;
-}
-::-webkit-scrollbar-thumb:horizontal{
-  background: #dda2d5;
-  border-radius: 10px;
 }
 
 .section-holder.header {
@@ -30,6 +20,7 @@ main {
 
   #linkfluence-description {
     margin-bottom: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
@@ -44,13 +35,13 @@ main {
     width: inherit;
     height: inherit;
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1.2rem;
     left: -100%;
   }
 
   .images {
-    animation: primary 20s linear alternate-reverse infinite;
+    animation: primary 25s linear alternate infinite;
   }
 }
 
