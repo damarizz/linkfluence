@@ -12,27 +12,28 @@
         display: flex;
         padding: 0.9rem 0.7rem 0.55rem 0.7rem;
     }
-
+    
     .nav-bar-links {
         align-items: center;
         display:flex;
         margin-right: 4rem;
         font-size: 1rem;
     }
-
-
+    
+    
     .nav-link {
-        font-weight: 500;
+    font-weight: bold;
+        font-family: sans-serif;
         margin-left: 40px;
         position: relative;
         color: #000;
         text-decoration: none;
     }
-
+    
     .nav-link:hover {
         color: #EE95C8;
     }
-
+    
     .nav-link::before {
         content: "";
         position: absolute;
@@ -45,27 +46,28 @@
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
-
+    
     .nav-link:hover::before {
         transform: scaleX(1);
     }
-
+    
     .nav-bar-line {
         border: 0;
         margin: 0 auto;
         border-top: 1px solid #EE95C8;
         border-bottom: 0.2px solid #EE95C8;
     }
-
+    
     .logo {
         width: fit-content;
         margin-left: 4rem;
-
+    
     }
-
+    
     .logo img {
         width: 16rem;
     }
+    
 
     @media (max-width: 880px) {
         .nav-bar {
