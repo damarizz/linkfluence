@@ -1,0 +1,170 @@
+/* HEADER */
+
+.nav-bar{
+    justify-content: space-between;
+    display: flex;
+    padding: 0.9rem 0.7rem 0.55rem 0.7rem;
+}
+
+.nav-bar-links {
+    align-items: center;
+    display:flex;
+    margin-right: 4rem;
+    font-size: 1rem;
+}
+
+
+.nav-link {
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 40px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #EE95C8;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EE95C8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-bar-line {
+    border: 0;
+    margin: 0 auto;
+    border-top: 1px solid #EE95C8;
+    border-bottom: 0.2px solid #EE95C8;
+}
+
+.logo {
+    width: fit-content;
+    margin-left: 4rem;
+
+}
+
+.logo img {
+    width: 16rem;
+}
+
+.nav-toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.nav-toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #EE95C8;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        background-color:rgb(252, 252, 252);
+    }
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .nav-toggle-button {
+        display: flex;
+    }
+
+    .nav-bar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        width: 100%;
+        margin: 0;
+        margin-top: 0.3rem;
+    }
+
+    .nav-bar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-bar-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: .1rem .2rem;
+    }
+}
+
+/*BODY*/
+
+.thanks-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.car-image {
+    width: 25rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: .2rem;
+    margin-bottom: 1.5rem;
+}
+
+.volver-button {
+    height: 3rem;
+    width: 15%;
+    border-radius: 10px;
+    background-color: #EE95C8;
+    margin-bottom: 2rem;
+}
+
+.volver-button a {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
