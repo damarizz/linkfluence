@@ -52,7 +52,7 @@ const influencers = [
     title: 'El perro de Alwin',
     location: "Perú, Lima",
     interests: "Mascotas, Entretenimiento",
-    prices_from: 500,
+    prices_from: 9999999,
     social_media: "Instagram"
   },
   {
@@ -123,4 +123,11 @@ influencers.forEach((influencer) => {
     </div>
   `
   feed.appendChild(element)
+})
+
+const toggleButton = document.getElementsByClassName('nav-toggle-button')[0]
+const navBarLinks = document.getElementsByClassName('nav-bar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navBarLinks.classList.toggle('active')
 })
