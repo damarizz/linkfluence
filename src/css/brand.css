@@ -192,6 +192,7 @@ h1 span.stop-blinking::before {
     font-weight: bolder;
     text-align: center;
     border-radius: 10px;
+    text-decoration:none;
 }
 
 /* logos */
